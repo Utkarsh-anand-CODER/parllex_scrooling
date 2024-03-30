@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo">Festival</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a> </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <section id="scene">
+        <img src="splash.png" id="splash">
+        <img src="text.png" id="text">
+        <img src="baloon1.png" id="baloon1">
+        <img src="baloon2.png" id="baloon2">
+        <img src="baloon3.png" id="baloon3">
+        <img src="decoration1.png" id="decoration1">
+        <img src="decoration2.png" id="decoration2">
+        <img src="color1.png" id="color1">
+        <img src="color2.png" id="color2">
+        <img src="watergun1.png" id="watergun1">
+        <img src="watergun2.png" id="watergun2">
+
+
+
+    </section>
+
+    <div class="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Et ea aliqua excepteur irure cupidatat non irure in ut. Commodo elit eiusmod dolor qui adipisicing id qui
+            nulla consectetur. Sit dolor fugiat exercitation magna magna culpa. Ullamco non est duis et sit quis veniam
+            mollit veniam commodo exercitation.
+
+            Ullamco consequat enim cupidatat consectetur anim ex. Commodo duis velit culpa sit. Labore mollit eu ipsum
+            in nisi. Commodo est tempor aliquip dolor exercitation.
+
+            Ipsum aute ad mollit labore voluptate aute quis. Ipsum laborum cupidatat sit quis magna aliquip ex commodo
+            fugiat aute fugiat. Nisi pariatur sit occaecat nostrud occaecat magna est. Ea est aliquip nostrud mollit qui
+            proident amet Lorem. Consequat sint nisi enim quis nisi ut sunt eiusmod culpa qui elit commodo consequat
+            proident.
+
+            <br>Mollit elit minim labore irure mollit duis sunt aliquip aliqua minim. Mollit proident esse laboris
+            reprehenderit reprehenderit eu dolor. Irure amet ex sunt laborum ex officia id proident irure ex ad.
+            Cupidatat voluptate incididunt aute pariatur sint aute incididunt magna dolore velit elit dolore. Lorem
+            nulla Lorem do minim fugiat ex et sint culpa commodo ad quis magna dolore. Cupidatat ullamco consectetur ad
+            pariatur aliquip duis est. Incididunt minim laborum laborum do velit non duis aliqua ad esse in.
+
+            Occaecat et culpa in occaecat excepteur nulla dolore aliqua do. Commodo enim non Lorem anim ad est. Ex eu
+            irure adipisicing non Lorem id quis sint nisi ullamco amet laborum. Consequat adipisicing ut est dolor ad
+            aliquip cupidatat labore. Tempor adipisicing culpa commodo ipsum sit deserunt. Sunt fugiat ut mollit cillum
+            exercitation ullamco deserunt occaecat dolore.
+
+            <br>Esse ad aliqua commodo irure pariatur sint ullamco ex est tempor excepteur. Ut laboris ullamco amet
+            adipisicing laborum anim ex eu id. Dolor irure dolor irure elit sint occaecat ullamco ad eiusmod minim nulla
+            commodo fugiat nisi. Nisi id nulla commodo quis aute incididunt qui pariatur.
+
+            Occaecat minim officia et non ad do et enim. Mollit fugiat officia irure occaecat amet commodo officia ea
+            officia. Nulla velit est laborum cillum quis cupidatat Lorem sit ipsum eu deserunt cupidatat consequat sint.
+            Velit tempor proident in non ex ipsum. Labore aliquip elit aute fugiat do.
+
+            Commodo dolor et aliqua pariatur dolor nostrud pariatur. Reprehenderit magna exercitation ut duis eiusmod do
+            ex magna commodo. Sit ullamco eiusmod adipisicing aute sit est. Esse irure exercitation labore ad proident
+            occaecat sint incididunt labore anim qui excepteur excepteur reprehenderit.
+
+            <br>Officia minim cupidatat sunt duis id. Ipsum excepteur laboris dolor fugiat reprehenderit dolore proident non
+            aute ex enim excepteur adipisicing. Irure et qui aliquip minim Lorem. Aliqua ullamco irure excepteur ex
+            commodo laboris cupidatat ipsum. Sit laborum anim eiusmod aute fugiat irure. Voluptate labore cupidatat
+            aliquip consequat tempor irure nostrud velit proident cupidatat laboris ut.
+
+            Aliquip mollit dolore in minim proident elit velit dolor voluptate. Officia cupidatat elit ea amet officia
+            consectetur amet et. Irure anim duis ex ipsum est do. Qui ullamco amet ex commodo. Voluptate irure sint
+            irure qui aliquip consectetur amet do ipsum voluptate amet est tempor non. Et elit id aute fugiat duis
+            adipisicing irure est sunt. Magna aliqua nisi est culpa.</p>
+    </div>
+    <script>
+        let splash = document.getElementById('splash');
+        let text = document.getElementById('text');
+        let decoration1 = document.getElementById('decoration1');
+        let baloon1 = document.getElementById('baloon1');
+        let baloon2 = document.getElementById('baloon2');
+        let baloon3 = document.getElementById('baloon3');
+        let color1 = document.getElementById('color1');
+        let color2 = document.getElementById('color2');
+        let watergun1 = document.getElementById('watergun1');
+        let watergun2 = document.getElementById('watergun2');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            splash.style.top = value * 0.75 + 'px';
+            text.style.top = value * 0.25 + 'px';
+            decoration1.style.top = value * 0.5 + 'px';
+            baloon1.style.top = value * -3.25 + 'px';
+            baloon2.style.top = value * -0.5 + 'px';
+            baloon3.style.top = value * -2 + 'px';
+            color1.style.top = value * -0.25 + 'px';
+            color2.style.top = value * -0.75 + 'px';
+            watergun1.style.left = value * -0.75 + 'px';
+            watergun2.style.right = value * 0.75 + 'px';
+
+        })
+
+    </script>
+</body>
+
+</html>
